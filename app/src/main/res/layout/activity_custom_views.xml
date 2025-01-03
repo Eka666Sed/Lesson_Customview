@@ -17,4 +17,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:practicum_circleColor="@android:color/holo_blue_light"
         app:practicum_circleRadius="50dp" />
+
+    <com.yandex.practicum.sample.customviews.views.ColorChangeButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My custom button"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circleView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

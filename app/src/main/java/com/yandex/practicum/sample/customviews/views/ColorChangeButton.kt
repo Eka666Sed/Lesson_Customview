@@ -10,4 +10,11 @@ class ColorChangeButton @JvmOverloads constructor(
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
 ) : AppCompatButton(context, attrs, defStyleAttr) {
+    init {
+        setBackgroundColor(ContextCompat.getColor(context, android.R.color.holo_blue_light))
+
+        setOnClickListener {
+            setBackgroundColor(ContextCompat.getColor(context, android.R.color.holo_red_light))
+        }
+    }
 }
